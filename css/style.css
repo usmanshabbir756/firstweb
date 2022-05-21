@@ -1,3 +1,4 @@
+
 /*color platte*/
 :root{
     --color-primary: #2584ff;
@@ -5,6 +6,11 @@
     --color-accent: #ff3400;
     --color-heading: #1b0760;
     --color-body: #918ca4;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
 }
 /*Tyopography*/
 html{
@@ -119,4 +125,47 @@ font-size: 1.6rem;
     .list--tick .list__item{
         padding-left: 0;
     }
+}
+/* button */
+.btn{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    border: 0;
+    text-align: center;
+    border-radius: 40px;
+}
+.btn--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.btn--primary:hover{
+    background: #3a8ffd;
+}
+.btn--secondary{
+    background: var(--color-secondary);
+    color: white;
+}
+.btn--secondary:hover{
+    background: #05cdf0;
+}
+.btn--accent{
+    background: var(--color-accent);
+    color: white;
+}
+.btn--accent:hover{
+    background: #ec3000;
+}
+.btn--outline{
+    background: white;
+    color: var(--color-heading);
+    border: 2px solid var(--color-heading);
+}
+.btn--outline:hover{
+    background: var(--color-heading);
+    color: white;
+}
+.btn--block{
+    width: 100%;
+    display: inline-block;
 }
